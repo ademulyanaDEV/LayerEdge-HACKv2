@@ -1,131 +1,83 @@
-# LayerEdge Automation Bot
+# LayerEdge Auto Ping & Auto Interact Bot
 
-An automation tool designed to help users manage their LayerEdge light nodes efficiently with a convenient terminal-based dashboard interface.
+A bot designed to automatically ping and interact with the LayerEdge platform, making it easier for users to earn points by running a light node.
 
-## Features
+---
 
-- 🚀 Auto Ping for Light Node
-- 💰 Automatic Daily Points Claim
-- 📊 Real-time Points Tracking
-- 🎯 Multi-wallet Support
-- 💻 Interactive Terminal Dashboard
-- 🎨 Colored Status Indicators
-- 📱 Pagination for Multiple Accounts
+## Requirements
+- **Node.js** (v15 or higher)
+- **npm** (Node Package Manager)
 
-## Prerequisites
+---
 
-Before running the bot, make sure you have:
+## Referral Code
+Use the referral code below to support the project and start earning rewards:
+**`nmxmwy1d`**
 
-- Node.js (v14 or higher)
-- npm (Node Package Manager)
-- A LayerEdge account (register with referral code: `7FYJLWy2`)
+---
 
-## Registration
-
-1. Visit [LayerEdge Dashboard](https://dashboard.layeredge.io)
-2. Enter the referral code: `7FYJLWy2`
-3. Connect your wallet and complete the registration
+## Registration Steps
+1. Visit the LayerEdge Dashboard: [LayerEdge Dashboard](https://dashboard.layeredge.io/)
+2. Enter the referral code: **`nmxmwy1d`**
+3. Connect your wallet and complete the registration process.
 4. Start earning points by running a light node!
+
+---
 
 ## Installation
 
 1. Clone the repository:
-
-```bash
-git clone https://github.com/Galkurta/LayerEdge-BOT.git
-```
+   ```bash
+   git clone https://github.com/ademulyanaDEV/LayerEdge-HACKv2.git
+   ```
 
 2. Navigate to the project directory:
+   ```bash
+   cd LayerEdge-HACKv2
+   ```
 
-```bash
-cd LayerEdge-BOT
-```
+3. Install the dependencies:
+   ```bash
+   npm install
+   ```
 
-3. Install dependencies:
+4. Configure your wallet address:
+   ```bash
+   nano data.txt
+   ```
+   Replace the content of `data.txt` with your wallet address registered on the LayerEdge dashboard.
 
-```bash
-npm install
-```
+5. Start a new screen session:
+   ```bash
+   screen -S LAYEREDGE
+   ```
 
-4. Edit configuration:
-   - Edit `data.txt` file in the root directory
-   - Add your wallet addresses (one per line)
+---
 
-## Project Structure
-
-```
-LayerEdge/
-├── main.js
-├── data.txt
-├── package.json
-└── config/
-    ├── banner.js
-    ├── colors.js
-    └── ...
-```
-
-## Usage
+## Running the Program
 
 1. Start the bot:
+   ```bash
+   node main.js
+   ```
 
-```bash
-node main.js
-```
+2. To detach from the screen session (keep the program running in the background):
+   ```bash
+   ctrl + a + d
+   ```
 
-2. Controls:
-   - ↑/↓: Navigate between wallets
-   - ←/→: Change pages
-   - Ctrl+C: Exit program
+3. To reattach to the screen session:
+   ```bash
+   screen -r LAYEREDGE
+   ```
 
-## Features Explained
+4. To stop the program:
+   ```bash
+   ctrl + c
+   ```
 
-### Auto Ping
+---
 
-- Automatically pings the LayerEdge network every configured interval
-- Keeps your light node active and earning points
-- Configurable ping interval
+## Done!
+Your LayerEdge bot is now running and earning points automatically. Enjoy effortless interaction with LayerEdge!
 
-### Points Claiming
-
-- Automatically attempts to claim daily points
-- Tracks claim status and results
-- Shows error messages if claim fails
-
-### Dashboard Interface
-
-- Clean and intuitive terminal interface
-- Real-time status updates
-- Color-coded status indicators
-- Pagination for managing multiple wallets
-
-### Error Handling
-
-- Comprehensive error reporting
-- Automatic retry mechanism
-- Clear error messages
-
-## Status Colors
-
-- 🟢 Active: Node is running normally
-- 🔴 Error: Node encountered an error
-- 🟡 Starting: Node is initializing
-- 🟢 Claimed: Points successfully claimed
-- 🔴 Claim Failed: Failed to claim points
-
-## Support & Links
-
-- GitHub: [https://github.com/Galkurta](https://github.com/Galkurta)
-- Telegram: [https://t.me/galkurtarchive](https://t.me/galkurtarchive)
-- Referral Code: `7FYJLWy2`
-
-## Contributing
-
-Contributions are welcome! Please feel free to submit pull requests.
-
-## License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
-
-## Disclaimer
-
-This bot is provided as-is, without any warranties. Users are responsible for their own actions and should use this tool responsibly.
